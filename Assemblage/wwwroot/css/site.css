@@ -16,3 +16,289 @@ html {
 body {
   margin-bottom: 60px;
 }
+
+body {
+    background-color: #FAF8F7;
+}
+
+.navbar {
+    background-color: #952004;
+    color: #FAF8F7;
+    padding-left: 10%;
+    font-family: Merriweather;
+    text-decoration: none;
+}
+
+.navbar-brand {
+    font-size: 30px;
+}
+
+.navbar-nav {
+    padding-left: 15px;
+}
+
+.nav-item {
+    font-size: 20px;
+}
+
+.justify-content-end {
+    padding-right: 25px;
+}
+
+.nav-search {
+    display: block;
+    width: 100%;
+    padding: 0.375rem 0.75rem;
+    font-size: 1rem;
+    font-weight: 400;
+    line-height: 1.5;
+    color: #212529;
+    background-color: #fff;
+    background-clip: padding-box;
+    border: 1px solid #ced4da;
+    border-radius: 0.25rem;
+    transition: border-color 0.15s ease-in-out, box-shadow 0.15s ease-in-out;
+}
+
+.btn-secondary {
+    margin-left: 5px;
+    background-color: #952004;
+    border-color: #FAF8F7;
+}
+
+.btn-secondary:hover {
+    background-color: #FAF8F7;
+    border-color: #FAF8F7;
+    color: #952004;
+}
+
+.main {
+    display: flex;
+    border: 3px solid #952004; /* set the border width and color */
+    border-radius: 25px;
+    background-color: #FAF8F7; /* set the background color */
+    color: #952004; /* set the text color */
+    padding: 0px; /* add some padding inside the button */
+    display: flex;
+    margin-left: 35px;
+    margin-right: 35px;
+    height: 800px;
+    padding-top: 0px;
+}
+
+.group-body {
+    border: 3px solid #952004; /* set the border width and color */
+    border-bottom-left-radius: 25px;
+    border-top-left-radius: 25px;
+    border-left-width: 0;
+    border-top-width: 0;
+    border-bottom-width: 0;
+    background-color: #FAF8F7; /* set the background color */
+    color: #952004; /* set the text color */
+    height: 100%;
+    width: 50%;
+    justify-content: center;
+    align-items: center;
+    padding-right: 40px;
+    overflow-x: hidden;
+    overflow-y: auto;
+    -webkit-overflow-scrolling: touch;
+}
+
+div::-webkit-scrollbar {
+    width: 0;
+}
+
+/* Grop Box Section */
+
+.group-box {
+    align-self: center;
+    border-radius: 25px;
+    background-color: #952004;
+    margin: 20px;
+    height: 132px;
+    width: 100%;
+    display: flex;
+}
+
+.group-box:hover {
+    align-self: center;
+    border-radius: 25px;
+    background-color: #b63625;
+    margin: 20px;
+    height: 132px;
+    width: 100%;
+    cursor: pointer;
+}
+
+.group-box-selected {
+    border: 3px solid #952004; /* set the border width and color */
+    border-radius: 25px;
+    background-color: #FAF8F7;
+    margin: 20px;
+    height: 132px;
+    width: 100%;
+    display: flex;
+}
+
+.group-box-image {
+    margin: 12px;
+    margin-left: 25px;
+}
+
+.group-box-text {
+    color: #FAF8F7;
+    font-family: Merriweather;
+}
+
+.group-box-text-title {
+    padding-top: 10%;
+    font-size: 25px;
+}
+
+.group-box-text-selected {
+    color: #952004;
+    font-family: Merriweather;
+}
+
+.group-box-text-title-selected {
+    padding-top: 10%;
+    font-size: 25px;
+}
+
+/* Message Section */
+
+.message-section {
+    width: 100%;
+}
+
+.message-top-section {
+    border: 3px solid #952004; /* set the border width and color */
+    border-width: 0;
+    border-top-right-radius: 25px;
+    border-top-left-radius: 25px;
+    background-color: #FAF8F7; /* set the background color */
+    color: #952004; /* set the text color */
+    padding: 0px; /* add some padding inside the button */
+    display: flex;
+    height: 20%;
+    padding-top: 0px;
+    width: 100%;
+}
+
+.message-top-section-image {
+    padding-top: 30px;
+    padding-left: 60px;
+}
+
+.message-top-section-title {
+    color: #952004;
+    font-family: Merriweather;
+    padding-top: 50px;
+    padding-left: 60px;
+    font-size: 40px;
+}
+
+.message-body {
+    border: 3px solid #952004; /* set the border width and color */
+    border-left-width: 0;
+    border-right-width: 0;
+    border-bottom-width: 0;
+    border-bottom-right-radius: 25px;
+    border-bottom-left-radius: 25px;
+    background-color: #FAF8F7; /* set the background color */
+    color: #952004; /* set the text color */
+    /* display: flex; */
+    justify-content: center; /* center the child horizontally */
+    /* align-items: center; center the child vertically */
+    height: 73%;
+    padding: 20px;
+    width: 100%;
+    overflow-x: hidden;
+    overflow-y: auto;
+    -webkit-overflow-scrolling: touch;
+}
+
+.message-top {
+    border: 3px solid #952004; /* set the border width and color */
+    background-color: #FAF8F7; /* set the background color */
+    height: 30px;
+    margin-bottom: 5px;
+    width: 40%;
+    border-top-right-radius: 15px;
+}
+
+.message-middle {
+    border: 3px solid #952004; /* set the border width and color */
+    background-color: #FAF8F7; /* set the background color */
+    height: 30px;
+    margin-bottom: 5px;
+    width: 40%;
+}
+
+.message-bottom {
+    border: 3px solid #952004; /* set the border width and color */
+    background-color: #FAF8F7; /* set the background color */
+    height: 30px;
+    margin-bottom: 5px;
+    width: 40%;
+    border-bottom-right-radius: 15px;
+}
+
+.message {
+    border: 3px solid #952004; /* set the border width and color */
+    background-color: #FAF8F7; /* set the background color */
+    height: 30px;
+    margin-top: 30px;
+    margin-bottom: 30px;
+    width: 40%;
+    border-top-right-radius: 15px;
+    border-bottom-right-radius: 15px;
+}
+
+.my-message-top {
+    border: 3px solid #952004; /* set the border width and color */
+    background-color: #952004; /* set the background color */
+    height: 30px;
+    margin-bottom: 5px;
+    width: 40%;
+    border-top-left-radius: 15px;
+    margin-left: 60%;
+}
+
+.my-message-middle {
+    border: 3px solid #952004; /* set the border width and color */
+    background-color: #952004; /* set the background color */
+    height: 30px;
+    margin-bottom: 5px;
+    width: 40%;
+    margin-left: 60%;
+}
+
+.my-message-bottom {
+    border: 3px solid #952004; /* set the border width and color */
+    background-color: #952004; /* set the background color */
+    height: 30px;
+    margin-bottom: 5px;
+    width: 40%;
+    border-bottom-left-radius: 15px;
+    margin-left: 60%;
+}
+
+.my-message {
+    border: 3px solid #952004; /* set the border width and color */
+    background-color: #952004; /* set the background color */
+    height: 30px;
+    margin-top: 30px;
+    margin-bottom: 30px;
+    width: 40%;
+    border-top-left-radius: 15px;
+    border-bottom-left-radius: 15px;
+    margin-left: 60%;
+}
+
+.send-body {
+    margin: 15px;
+    margin-top: 0;
+}
+
