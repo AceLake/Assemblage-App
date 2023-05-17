@@ -29,8 +29,26 @@ body {
     text-decoration: none;
 }
 
+ul {
+    color: #FAF8F7;
+}
+
+.nav-link {
+    color: #FAF8F7;
+}
+
+.nav-link:hover {
+    color: #FAF8F7;
+}
+
 .navbar-brand {
     font-size: 30px;
+    color: #FAF8F7;
+}
+
+.navbar-brand:hover {
+    font-size: 30px;
+    color: #FAF8F7;
 }
 
 .navbar-nav {
