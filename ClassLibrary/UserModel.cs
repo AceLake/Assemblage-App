@@ -35,13 +35,13 @@ namespace ClassLibrary
             History = history;
             Groups = groups;
         }
-        // send a message by the user
-        public void SendMessage(string content)
-        {
-            MessageDAO messageDAO = new MessageDAO();
-            MessageModel message = new MessageModel();
-            //messageDAO.CreateMessage(ID);
-        }
+        //// send a message by the user
+        //public void SendMessage(string content)
+        //{
+        //    MessageDAO messageDAO = new MessageDAO();
+        //    MessageModel message = new MessageModel();
+        //    //messageDAO.CreateMessage(ID);
+        //}
 
         public override string ToString()
         {
