@@ -1,4 +1,15 @@
-﻿// Please see documentation at https://docs.microsoft.com/aspnet/core/client-side/bundling-and-minification
-// for details on configuring this project to bundle and minify static web assets.
+﻿$(document).on("click", ".group-box-selected", function (event) {
+    event.preventDefault();
+    var groupID = $(this).val();
+    console.log("select Group button was clicked on ID" + groupID)
 
-// Write your JavaScript code.
+    $.ajax({
+        datatype: "test/plain",
+        url: 'Messaging/ShowGroupMessage',
+        data: { ID : groupID },
+        success: function (data) {
+            console.log(data);
+            $(".message-section").html(data);
+        }
+    });
+});

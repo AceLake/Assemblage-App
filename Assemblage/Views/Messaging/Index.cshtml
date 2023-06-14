@@ -1,85 +1,25 @@
-﻿<div class="main">
+﻿@model IEnumerable<ClassLibrary.ConversationModel>
+<div class="main">
     <div class="group-body">
         <!-- Group boxws go here -->
-        <div class="group-box-selected">
-            <div class="group-box-image">
-                <img src="/images/profile pic prom.gif" alt="">
-            </div>
-            <div class="group-box-text-selected">
-                <div class="group-box-text-title-selected">
-                    Camelback Crusaders
+        @foreach (var item in Model)
+        {
+            <button class="group-box-selected" value="@item.ID" asp-controller="Messaging" asp-action="ShowGroupMessage">
+                <div class="group-box-image">
+                    <img src="/images/profile pic prom.gif" alt="">
                 </div>
-                <div class="group-box-text-last-message-selected">
-                    Last message sent 2d ago
+                <div class="group-box-text-selected">
+                    <div class="group-box-text-title-selected">
+                        @item.Title
+                    </div>
+                    <div class="group-box-text-last-message-selected">
+                        Last message sent 2d ago
+                    </div>
                 </div>
-            </div>
-        </div>
-        <div class="group-box">
-            <div class="group-box-image">
-                <img src="/images/profile pic prom.gif" alt="">
-            </div>
-            <div class="group-box-text">
-                <div class="group-box-text-title">
-                    Camelback Crusaders
-                </div>
-                <div class="group-box-text-last-message">
-                    Last message sent 2d ago
-                </div>
-            </div>
-        </div>
-        <div class="group-box">
-            <div class="group-box-image">
-                <img src="/images/profile pic prom.gif" alt="">
-            </div>
-            <div class="group-box-text">
-                <div class="group-box-text-title">
-                    Camelback Crusaders
-                </div>
-                <div class="group-box-text-last-message">
-                    Last message sent 2d ago
-                </div>
-            </div>
-        </div>
-        <div class="group-box">
-            <div class="group-box-image">
-                <img src="/images/profile pic prom.gif" alt="">
-            </div>
-            <div class="group-box-text">
-                <div class="group-box-text-title">
-                    Camelback Crusaders
-                </div>
-                <div class="group-box-text-last-message">
-                    Last message sent 2d ago
-                </div>
-            </div>
-        </div>
-        <div class="group-box">
-            <div class="group-box-image">
-                <img src="/images/profile pic prom.gif" alt="">
-            </div>
-            <div class="group-box-text">
-                <div class="group-box-text-title">
-                    Camelback Crusaders
-                </div>
-                <div class="group-box-text-last-message">
-                    Last message sent 2d ago
-                </div>
-            </div>
-        </div>
-        <div class="group-box">
-            <div class="group-box-image">
-                <img src="/images/profile pic prom.gif" alt="">
-            </div>
-            <div class="group-box-text">
-                <div class="group-box-text-title">
-                    Camelback Crusaders
-                </div>
-                <div class="group-box-text-last-message">
-                    Last message sent 2d ago
-                </div>
-            </div>
-        </div>
+            </button>
+        }
     </div>
+    <!-- Message Section -->
     <div class="message-section">
         <div class="message-top-section">
             <!-- Group info goes here -->
@@ -92,7 +32,7 @@
         </div>
         <div class="message-body">
             <!-- Messages go here -->
-            <div class="message-top"></div>
+            @*<div class="message-top"></div>
             <div class="message-middle"></div>
             <div class="message-bottom"></div>
             <div class="message"></div>
@@ -107,7 +47,7 @@
             <div class="my-message-top"></div>
             <div class="my-message-middle"></div>
             <div class="my-message-bottom"></div>
-            <div class="my-message"></div>
+            <div class="my-message"></div>*@
 
         </div>
         <div class="send-body">
