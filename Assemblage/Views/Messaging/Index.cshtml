@@ -1,6 +1,16 @@
 ﻿@model IEnumerable<ClassLibrary.ConversationModel>
 <div class="main">
     <div class="group-body">
+        <button class="create-group-group-box" asp-controller="Messaging" asp-action="CreateGroup">
+            <div class="group-box-image">
+                <img src="/images/profile pic prom.gif" alt="">
+            </div>
+            <div class="group-box-text-selected">
+                <div class="group-box-text-title-selected">
+                   Create a group
+                </div>
+            </div>
+        </button>
         <!-- Group boxws go here -->
         @foreach (var item in Model)
         {
