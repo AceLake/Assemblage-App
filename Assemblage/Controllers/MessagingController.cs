@@ -7,6 +7,8 @@ namespace Assemblage.Controllers
     {
         List<ConversationModel> groups = new List<ConversationModel>();
 
+        // Connect the 
+
         public MessagingController()
         {
             groups.Add(new ConversationModel("Camelback Crusaders"));
