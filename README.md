@@ -7,3 +7,6 @@ Why did I want to make this app? Glad you asked. I found out that joining a Bibl
 
 Here is the messaging side of the app which holds all of the user's groups and conversations.
 ![image](https://github.com/AceLake/Assemblage-App/assets/96988100/a2551898-a9a8-4aa9-9392-cfab82bf71ca)
+
+Here are the class diagrams (UML) for the app.
+![Assemblage Class Diagram drawio](https://github.com/AceLake/Assemblage-App/assets/96988100/8ba9824c-33d7-4e30-bd25-6a75f797d2df)
