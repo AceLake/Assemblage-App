@@ -1,14 +1,15 @@
-﻿using ClassLibrary;
+﻿using Assemblage.Services;
+using ClassLibrary;
 using Microsoft.AspNetCore.Mvc;
 
 namespace Assemblage.Controllers
 {
     public class FindGroupController : Controller
     {
-        List<ConversationModel> groups = new List<ConversationModel>();
+        ConversationDAO conversationDAO = new ConversationDAO();
         public IActionResult Index()
         {
-            return View();
+            return View(conversationDAO.GetAll());
         }
     }
 }

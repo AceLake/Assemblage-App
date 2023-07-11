@@ -40,6 +40,37 @@ namespace Assemblage.Services
             }
         }
 
+        public List<ConversationModel> GetAll()
+        {
+            List<ConversationModel> conversations = new List<ConversationModel>();
+
+            using (MySqlConnection connection = new MySqlConnection(connectionString))
+            {
+                connection.Open();
+
+                MySqlCommand command = new MySqlCommand("SELECT * FROM conversations", connection);
+
+                using (MySqlDataReader reader = command.ExecuteReader())
+                {
+                    while (reader.Read())
+                    {
+                        ConversationModel conversation = new ConversationModel
+                        {
+                            ID = reader.GetInt32(reader.GetOrdinal("ID")),
+                            Title = reader.GetString(reader.GetOrdinal("Title")),
+                            //LastMessage = reader.IsDBNull(reader.GetOrdinal("LastMessage")) ? null : reader.GetString(reader.GetOrdinal("LastMessage")),
+                            TimeStamp = reader.GetDateTime(reader.GetOrdinal("TimeStamp"))
+                        };
+
+                        conversations.Add(conversation);
+                    }
+                }
+            }
+
+            return conversations;
+        }
+
+
         public ConversationModel GetConversationByID(int conversationId)
         {
             using (MySqlConnection connection = new MySqlConnection(connectionString))
